@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="robots" content="noindex, nofollow">
+  <title>180° Barbershop — Tlemcen · Rendez-vous en ligne (maquette)</title>
+  <meta name="description" content="180° Barbershop, Tlemcen : prestations, photos, avis et réservation en ligne.">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/theme.css">
+</head>
+<body>
+  <div class="demo-bar">Maquette de démonstration · les réservations restent dans ce navigateur · <button type="button" id="resetDemo">effacer les RDV de démo</button></div>
+  <header class="top">
+    <a class="logo" href="#accueil" aria-label="180° Barbershop, accueil"><img class="logo-img" src="images/logo-original.jpg" alt="Logo 180° (fiche Google)" width="34" height="34"> 180°<small>barbershop</small></a>
+    <nav class="nav" aria-label="Sections"><a href="#prestations">Prestations</a><a href="#galerie">Photos</a><a href="#avis">Avis</a><a href="#infos">Infos</a><a href="#contact">Contact</a></nav>
+    <a class="btn btn-red sm" href="#reserver">Réserver</a>
+  </header>
+  <main id="accueil">
+    <section class="hero">
+      <img class="hero-img" src="images/hero-1100.webp" srcset="images/hero-1100.webp 1100w, images/hero-1600.webp 1600w" sizes="100vw" alt="Façade noire du salon 180° barbershop avec son enseigne" fetchpriority="high">
+      <div class="hero-shade"></div>
+      <div class="hero-txt">
+        <p class="kicker">Barbershop · Tlemcen</p>
+        <h1>180° Barbershop</h1>
+        <p class="rating-line"><span class="stars" aria-hidden="true">★</span> <b>4,6</b> · 14 avis Google</p>
+        <p class="hero-sub">Bienvenue ! Choisissez votre prestation, votre barbier et votre heure en quelques secondes.</p>
+        <div class="hero-cta"><a class="btn btn-red" href="#reserver">Prendre rendez-vous</a><a class="btn btn-ghost" href="tel:0549769637">Appeler</a></div>
+        <div class="hero-chips"><span class="chip" id="openNow"></span><span class="chip chip-next" id="nextSlot" hidden></span></div>
+      </div>
+    </section>
+    <section class="quick"><div><b>4,6 ★</b><span>14 avis Google</span></div><div><b>24h/24</b><span>du lundi au samedi</span></div><div><b>En ligne</b><span>réservation 24h/24</span></div></section>
+    <div class="layout">
+    <section class="sec rv" id="prestations">
+      <h2>Prestations</h2>
+      <p class="sec-sub">Choisissez une prestation, puis votre barbier et votre heure.</p>
+      <p class="note" id="priceNote" hidden>Prix et durées d’exemple (tarifs courants à Tlemcen), à confirmer avec le salon.</p>
+      <div class="svc-list" id="svcList"><p class="muted">Chargement…</p></div>
+    </section>
+    <section class="sec side" id="reserver">
+      <h2>Réserver</h2>
+      <p class="sec-sub">En ligne, 24h/24. Créneaux toutes les 30 min. Prénoms des barbiers à confirmer.</p>
+      <div class="book" id="book">
+        <div class="progress" aria-hidden="true"><i id="prog"></i></div>
+        <ol class="steps" id="steps"><li data-s="1">Prestation</li><li data-s="2">Barbier</li><li data-s="3">Créneau</li><li data-s="4">Vos infos</li></ol>
+        <div class="pane" id="pane"><p class="muted">Chargement…</p></div>
+      </div>
+    </section>
+    <section class="sec rv" id="galerie">
+      <h2>Le salon en photos</h2>
+      <div class="gal" id="gal"><button data-big="images/p3-1100.webp"><img loading="lazy" src="images/p3-600.webp" alt="La devanture du salon dans la rue"></button><button data-big="images/p4-1100.webp"><img loading="lazy" src="images/p4-600.webp" alt="L’intérieur du salon"></button><button data-big="images/p5-1100.webp"><img loading="lazy" src="images/p5-600.webp" alt="L’entrée du salon"></button><button data-big="images/p2-1100.webp"><img loading="lazy" src="images/p2-600.webp" alt="Façade et enseigne 180° barbershop"></button></div>
+      <p class="credit">Photos : fiche Google Maps du salon.</p>
+    </section>
+    <section class="sec rv" id="avis">
+      <h2>Avis clients</h2>
+      <div class="score"><b>4,6</b><div><span class="stars">★★★★½</span><span class="muted">14 avis sur Google</span></div></div>
+      <div class="reviews"><blockquote><p>« Salon de coiffure très professionnel, rapide et précis. Accueil parfait ! Je recommande fortement. »</p><cite>Fadel B.</cite></blockquote><blockquote><p>« Bons produits et service correct à des prix moyens. »</p><cite>Mahdi Ghenaiet · avis traduit de l’anglais</cite></blockquote><blockquote><p>« Bon coiffeur. »</p><cite>assistance drc</cite></blockquote></div>
+      <a class="link" href="https://www.google.com/maps?cid=6144226594431469206" target="_blank" rel="noopener">Voir tous les avis sur Google</a>
+    </section>
+    <section class="sec rv" id="infos">
+      <h2>Horaires et accès</h2>
+      <div class="info-grid">
+        <div class="card"><h3>Horaires</h3><table class="hours" id="hours"></table></div>
+        <div class="card"><h3>Adresse</h3><p>180° Barbershop<br>Tlemcen (adresse exacte à confirmer)<br><span class="muted">Plus code : VMRC+6PX Tlemcen</span></p>
+          <a class="btn btn-dark sm" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&amp;destination=34.8906092,-1.3281495">Itinéraire</a></div>
+      </div>
+      <iframe class="map" title="Carte Google Maps : 180° Barbershop, Tlemcen" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=180°+barbershop%2C+VMRC+6PX+Tlemcen&amp;output=embed"></iframe>
+    </section>
+    <section class="sec rv" id="contact">
+      <h2>Contact</h2>
+      <div class="info-grid">
+        <div class="card"><h3>Nous joindre</h3><ul class="contact-list"><li>Téléphone : <a class="link" href="tel:0549769637">0549 76 96 37</a></li></ul>
+          <a class="btn btn-red sm" href="tel:0549769637">Appeler le salon</a></div>
+        <div class="card"><h3>Le salon</h3><p>180° est référencé comme barbier sur Google Maps, ouvert 24h/24 du lundi au samedi. Un avis Google cite ces services : shampoings et après-shampoings, coupes enfants, coupe au rasoir, rasage du crâne, coupe aux ciseaux, manucure homme, rasage, épilation à la cire.</p><img class="brand-logo" loading="lazy" src="images/logo-original.jpg" alt="Logo 180° (fiche Google)"></div>
+      </div>
+    </section>
+    </div>
+  </main>
+  <footer class="foot"><p><b>180° Barbershop</b> · Tlemcen · <a href="tel:0549769637">0549 76 96 37</a></p><p class="muted">Maquette de démonstration, non publiée.</p></footer>
+  <a class="call-fab" href="tel:0549769637" aria-label="Appeler le salon au 0549 76 96 37"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M7.2 3.4c.4-.4 1-.5 1.5-.3l2.2 1c.5.2.8.7.8 1.3l-.2 2.1c0 .4-.2.8-.5 1L9.6 10c.8 1.7 2.1 3.1 3.8 4l1.5-1.4c.3-.3.7-.5 1.1-.5l2.1.2c.5 0 1 .3 1.3.8l1 2.2c.2.5.1 1.1-.3 1.5l-1.3 1.3c-.4.4-1 .6-1.6.5-3.5-.4-6.8-2.2-9.3-4.7S4.3 8.8 3.9 5.3c-.1-.6.1-1.2.5-1.6L7.2 3.4Z"/></svg><span>Appeler</span></a>
+  <div class="lb" id="lb" hidden><button class="lb-x" aria-label="Fermer">×</button><img alt=""></div>
+  <script src="config.js"></script>
+  <script src="js/demo-api.js"></script>
+  <script src="js/app.js"></script>
+  <script>document.getElementById('resetDemo').onclick=function(){if(confirm('Effacer les rendez-vous de démonstration ?')){DEMO_API.reset();location.reload();}};</script>
+</body>
+</html>

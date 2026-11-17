@@ -1,0 +1,11 @@
+:root{--red:#b8902f;--red2:#8f6e1e;--ink:#0b0b0b}
+.top{background:color-mix(in srgb,#0b0b0b 94%,transparent)}
+.logo-img{height:34px;width:34px;border-radius:7px;object-fit:contain;vertical-align:middle;margin-right:6px}
+.chip-next{background:color-mix(in srgb,var(--red) 92%,transparent)}
+.call-fab{box-shadow:0 8px 24px rgba(0,0,0,.35)}
+@media(max-width:1023px){.hero-txt{padding-bottom:96px}}
+.brand-logo{max-width:100%;border-radius:12px;background:#fff;display:block}
+.demo-bar{background:#fff6e0;color:#7a5a00;font-size:13px;text-align:center;padding:6px 10px;border-bottom:1px solid #f3dfa5}
+.demo-bar button{font:inherit;background:none;border:0;text-decoration:underline;color:inherit;cursor:pointer}
+.staff-tag{font-size:12px}
+.contact-list{list-style:none;padding:0;margin:0 0 12px}.contact-list li{padding:7px 0;border-bottom:1px solid var(--line)}

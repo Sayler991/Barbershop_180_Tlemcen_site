@@ -1,0 +1,7 @@
+Maquette locale (non publiée). Ouvrir index.html dans un navigateur.
+La réservation est une démo : les rendez-vous sont gardés dans ce navigateur (localStorage),
+avec les mêmes règles que la version réelle (créneaux de 30 min selon les horaires, pas de double
+réservation pour un même barbier). Lien « effacer les RDV de démo » en haut de page.
+Prestations, prix, durées et prénoms des barbiers : exemples à confirmer (fichier config.js).
+Photos et logo : fiche Google Maps du salon, non retouchées (seulement redimensionnées / compressées ;
+le logo est copié tel quel dans images/logo-original.jpg).
