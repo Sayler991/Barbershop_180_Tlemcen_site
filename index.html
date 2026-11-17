@@ -4,14 +4,13 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="robots" content="noindex, nofollow">
-  <title>180° Barbershop — Tlemcen · Rendez-vous en ligne (maquette)</title>
+  <title>180° Barbershop — Tlemcen · Rendez-vous en ligne</title>
   <meta name="description" content="180° Barbershop, Tlemcen : prestations, photos, avis et réservation en ligne.">
-  <link rel="stylesheet" href="css/fonts.css">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/theme.css">
+  <link rel="stylesheet" href="css/fonts.css?v=2">
+  <link rel="stylesheet" href="css/style.css?v=2">
+  <link rel="stylesheet" href="css/theme.css?v=2">
 </head>
 <body>
-  <div class="demo-bar">Maquette de démonstration · les réservations restent dans ce navigateur · <button type="button" id="resetDemo">effacer les RDV de démo</button></div>
   <header class="top">
     <a class="logo" href="#accueil" aria-label="180° Barbershop, accueil"><img class="logo-img" src="images/logo-original.jpg" alt="Logo 180° (fiche Google)" width="34" height="34"> 180°<small>barbershop</small></a>
     <nav class="nav" aria-label="Sections"><a href="#prestations">Prestations</a><a href="#galerie">Photos</a><a href="#avis">Avis</a><a href="#infos">Infos</a><a href="#contact">Contact</a></nav>
@@ -77,12 +76,11 @@
     </section>
     </div>
   </main>
-  <footer class="foot"><p><b>180° Barbershop</b> · Tlemcen · <a href="tel:0549769637">0549 76 96 37</a></p><p class="muted">Maquette de démonstration, non publiée.</p></footer>
+  <footer class="foot"><p><b>180° Barbershop</b> · Tlemcen · <a href="tel:0549769637">0549 76 96 37</a></p><p class="muted">Site de présentation · prestations et prix à confirmer avec le salon.</p></footer>
   <a class="call-fab" href="tel:0549769637" aria-label="Appeler le salon au 0549 76 96 37"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M7.2 3.4c.4-.4 1-.5 1.5-.3l2.2 1c.5.2.8.7.8 1.3l-.2 2.1c0 .4-.2.8-.5 1L9.6 10c.8 1.7 2.1 3.1 3.8 4l1.5-1.4c.3-.3.7-.5 1.1-.5l2.1.2c.5 0 1 .3 1.3.8l1 2.2c.2.5.1 1.1-.3 1.5l-1.3 1.3c-.4.4-1 .6-1.6.5-3.5-.4-6.8-2.2-9.3-4.7S4.3 8.8 3.9 5.3c-.1-.6.1-1.2.5-1.6L7.2 3.4Z"/></svg><span>Appeler</span></a>
   <div class="lb" id="lb" hidden><button class="lb-x" aria-label="Fermer">×</button><img alt=""></div>
-  <script src="config.js"></script>
-  <script src="js/demo-api.js"></script>
-  <script src="js/app.js"></script>
-  <script>document.getElementById('resetDemo').onclick=function(){if(confirm('Effacer les rendez-vous de démonstration ?')){DEMO_API.reset();location.reload();}};</script>
+  <script src="config.js?v=2"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.117.3/dist/umd/supabase.js"></script>
+  <script src="js/app.js?v=2"></script>
 </body>
 </html>

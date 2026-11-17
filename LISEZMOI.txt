@@ -1,7 +1,12 @@
-Maquette locale (non publiée). Ouvrir index.html dans un navigateur.
-La réservation est une démo : les rendez-vous sont gardés dans ce navigateur (localStorage),
-avec les mêmes règles que la version réelle (créneaux de 30 min selon les horaires, pas de double
-réservation pour un même barbier). Lien « effacer les RDV de démo » en haut de page.
-Prestations, prix, durées et prénoms des barbiers : exemples à confirmer (fichier config.js).
+180° Barbershop (Tlemcen) — site + réservation en ligne (v2).
+Réservations enregistrées dans Supabase (projet Whoopy13, schéma isolé « barber180 »),
+accès uniquement via les fonctions public.barber180_* ; clé publishable dans config.js (publique).
+Règles côté base : créneaux de 30 min alignés sur l'ouverture, dans les horaires (24h/24 lun–sam,
+fermé le dimanche), pas de double réservation par barbier, au plus 3 RDV à venir par téléphone.
+Espace salon : /admin/ (compte admin fourni à part) — résumé du jour par barbier, vue jour
+(une colonne par barbier), vue semaine, boutons Appeler / Fait / Annuler, et modification des
+prestations, prix, barbiers et horaires.
+Schéma SQL : dev/supabase/schema.sql + seed.sql.
+Prestations, prix, durées et prénoms des barbiers : exemples à confirmer (modifiables dans /admin/).
 Photos et logo : fiche Google Maps du salon, non retouchées (seulement redimensionnées / compressées ;
 le logo est copié tel quel dans images/logo-original.jpg).
